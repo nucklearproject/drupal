@@ -1,7 +1,7 @@
 <?php
 ?>
 <div id="node-<?php print $node->nid; ?>" class="node<?php if ($sticky) { print ' sticky'; } ?><?php if (!$status) { print ' node-unpublished'; } ?>">
-<?php // echo $node->created ?>
+
 <?php 
 //echo my_new($node->created) ;
 $timenow = time() - 7 * 24 * 60 * 60;
