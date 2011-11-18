@@ -3,7 +3,7 @@
 <div id="node-<?php print $node->nid; ?>" class="node<?php if ($sticky) { print ' sticky'; } ?><?php if (!$status) { print ' node-unpublished'; } ?>">
 
 <?php 
-//echo my_new($node->created) ;
+//echo my_new($node->created) ; linea agredada
 $timenow = time() - 7 * 24 * 60 * 60;
 print date('Y-m-d', $timenow) ." ". date('Y-m-d', $node->created);
 
